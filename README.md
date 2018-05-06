@@ -18,31 +18,42 @@ int percentFirstAmn();
 void percentCalc(double& percentage, double& percentAmn);
 
 
-void initials();///starting and ending functions
+void initials();
 void goodBye();
 
-void clearScreen();///function clears screen
+void clearScreen();
 
 
-int mainMenu();///menu functions
+int mainMenu();
 void secMenu(int selection);
 void calcMenu();
 
 
-void add();///calculator functions
+void add();
 void sub();
 void div();
 void mult();
 
-void mean();        ///mean function
+void mean();        
 
-void salesTax();        ///sales tax function
+void salesTax();   
 
 
-struct tax_T {      ///sales tax structure and pointer
+struct tax_T {     
     string product;
     int salesTax;
     int amount;
     double tranAmn = 0;
     double finalTax = 0;
 };
+
+int main()
+{
+    cout << welcome();
+    initials();
+    _sleep(1000);
+    secMenu(mainMenu());
+    _sleep(5000);
+    goodBye();
+
+}
