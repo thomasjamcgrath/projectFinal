@@ -1,7 +1,29 @@
+string welcome(string hello = "Hello User!\n");
+
 int main();
 
-string welcome();
-int genSelct();
-int selector(int selection);
+void percentMenu();
+int percentFind();
+int percentFirstAmn();
+void percentCalc(double& percentage, double& percentAmn);
 
-double calculator();
+
+void initials();
+void goodBye();
+
+void clearScreen();
+
+
+int mainMenu();
+void secMenu(int selection);
+void calcMenu();
+
+
+void add();
+void sub();
+void div();
+void mult();
+
+void mean();        
+
+void salesTax();    
