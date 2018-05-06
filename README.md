@@ -310,3 +310,101 @@ for (int i = 0; i < terms; i++)
             cout << "The sum is " << sum << "\n";
 
 }
+
+enter mena here cosmo
+
+void salesTax()
+{
+    clearScreen();
+
+    string tax;
+
+    tax_T aTax;
+    tax_T * pTax;
+    pTax = &aTax;
+    double tranAmn = 0;
+    double finalTax = 0;
+    double finalSum = 0;
+    double sum = 0;
+    double startTax = 0;
+
+    cout << "Enter the name of your transaction.\n";
+    getline (cin, pTax->product);
+
+    cout << "Enter the number of items." << endl;
+    getline (cin, tax);
+
+    cout << "Enter the amount of the transaction\n";
+    cin >> tranAmn;
+
+    cout << "Enter the sales tax\n";
+    cin >> startTax;
+
+    (stringstream) tax >> pTax->amount;
+
+    cout << endl << "You have entered:\t";
+    cout << pTax-> product;
+    cout << " (" << pTax->amount << ")\n";
+
+    finalTax = startTax / 100;
+
+    sum = tranAmn * finalTax;
+    finalSum = tranAmn + sum;
+
+    cout << "The final sum is: "<< finalSum;
+
+
+}
+
+enter intials here cosmo
+
+void clearScreen()
+{
+    system("cls");
+}
+
+enter goodbyehere cosmo
+
+void percentMenu()
+{
+    clearScreen();
+
+    double percentage = 0;
+
+    cout << "Welcome to percent calculation.\n";
+    cout << "Enter the percent:\t\n";
+    cin >> percentage;
+
+    double percentAmn = 0;
+
+    cout << "Enter the number that you want to add or subtract the percentage too:\n";
+    cin >> percentAmn;
+
+
+    percentCalc(percentage, percentAmn);
+}
+
+void percentCalc(double& percentage, double& percentAmn)
+{
+    double percent = 0;
+    double percentHolder;
+    int ans = 0;
+
+    cout << "Enter 1: To add the percentage.\n";
+    cout << "Enter 2: to subtract the percentage.\n";
+    cin >> ans;
+
+    if (ans == 1)
+    {
+        percentHolder = percentAmn * percentage / 100;
+        percent = percentAmn + percentHolder;
+        cout << "The sum is " << percent << ".\n";
+    }
+    else if (ans == 2)
+    {
+        percentHolder = percentAmn * percentage / 100;
+        percent = percentAmn - percentHolder;
+        cout << "The sum is " << percent << ".\n";
+    }
+
+}
