@@ -394,14 +394,62 @@ void salesTax()
 
 }
 
-enter intials here cosmo
+void initials()
+{
+    _sleep(1000);
+    clearScreen();
+    
+    char firstIn;
+    char secondIn;
+    
+    bool x;
+    
+    int ans = 0;
+    
+    cout << "Enter the first intial. \n";///asks user for first initial
+    cin >> secondIn;
+    
+    cout << "Press 1:\t If you are ready to continue. \n";
+    cin >> ans;
+    
+    if (ans == 1) /// bool used to decided if initials are correct
+    {
+        bool x = true;
+    }
+
+clearScreen();
+
+    if ( x == true)
+    {
+        cout << "Hello " << firstIn << secondIn << ".\n";
+    }
+}
+
+/**
+clearScreen
+    function clears screen by inputing \n one hundred times
+        no parameters
+            no return
+*/
 
 void clearScreen()
 {
     system("cls");
 }
 
-enter goodbyehere cosmo
+/**
+goodBye
+    outputs GOODBYE to user
+        no parameters
+            no return
+*/
+void goodBye()
+{
+    clearScreen();
+    cout << "Created by Thomas McGrath\n";
+    cout << "And Connor Cosmo\n";
+    cout << "GOODBYE USER\n";
+}
 
 void percentMenu()
 {
