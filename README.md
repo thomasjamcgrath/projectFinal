@@ -311,7 +311,45 @@ for (int i = 0; i < terms; i++)
 
 }
 
-enter mena here cosmo
+void mean()
+{
+    clearScreen;///clear screen
+    
+    int terms = 0;
+    int sum = 0;
+    int x = 1;
+    
+    cout << "Welcome to Finding the Mean. \n";
+    cout << "Enter the amount of Values. \n";
+    cin >> terms; ///number of terms to find mean
+    cout << "Enter the values. \n";
+    
+    const int NUM_VALUES = terms; ///used for array
+    int add[NUM_VALUES];
+    
+    for (int i = 0; i < terms, i++)
+        {
+            add[i] = 0;
+            
+        }
+        
+        for (int i = 0; i < terms; i++) /// in array before addition can take place.
+          {   
+        
+            cin >> add[i];
+         }
+        
+        for (int i = 0; i < terms; i++)///finds the sum of the array
+        
+        {
+            
+            sum = sum + add [i];
+            
+        }
+        
+            cout << "The mean is " << sum / terms;/// divides array by amount of terms.
+ }
+        
 
 void salesTax()
 {
